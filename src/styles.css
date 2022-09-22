@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* background-color: #fdf28d; */
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.logo {
+  width: 5 rem;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-item {
+  padding: 0.2rem;
+  border: rgb(12, 7, 7) 2px;
+  border-radius: 7px;
+  width: 90%;
+  margin: 0.4rem;
+}
+.list-container {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0.5rem;
+}
+button {
+  padding: 0.4rem 2rem;
+  width: max-content;
+  font-weight: 700;
+  font-size: large;
+  background-color: transparent;
+  border-radius: 7px;
+  border-color: #ffffffd7;
+  margin: 1rem 0.5rem;
+  outline: none;
+}
