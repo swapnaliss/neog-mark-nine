@@ -6,26 +6,53 @@ export default function App() {
   const Food = {
     Indian: [
       {
-        name: "Misal Pav"
+        name: "Misal Pav",
+        description:
+          "Misal pav is a popular Maharashtrian street food of usal (sprouts curry) topped with onions, tomatoes, farsan (fried savory mixture), lemon juice, coriander leaves and served with a side of soft pav (Indian dinner rolls). The sprouts curry is made from moth bean sprouts. This misal recipe is a tasty and filling vegan dish that can be served as breakfast, lunch or brunch."
       },
       {
-        name: "Vada Pav"
+        name: "Vada Pav",
+        description:
+          "Vada pav is a savory dinner roll stuffed with fried mashed and spiced potato fritters. It is a popular vegan street food snack eaten in Mumbai and rest of Maharashtra. This dish is full of flavors and various textures!"
+      },
+      {
+        name: "Masala Dosa",
+        description:
+          "Masala Dosa / dosey / dosai is a variation of the popular South Indian dosa which has its origins in Tuluva Udupi cuisine of Karnataka. It is made from rice, lentils, potato, fenugreek, ghee and curry leaves, and served with chutneys and sambar. It is popular in South India."
       }
     ],
     Chinese: [
       {
-        name: "Noodles"
+        name: "Noodles",
+        description:
+          "Chinese noodles vary widely according to the region of production, ingredients, shape or width, and manner of preparation. Noodles were invented in China, and are an essential ingredient and staple in Chinese cuisine. They are an important part of most regional cuisines within China, and other countries with sizable overseas Chinese populations."
       },
       {
-        name: "chilly chicken "
+        name: "chilly chicken ",
+        description:
+          "Chilli chicken is a popular Indo-Chinese dish of chicken of Hakka Chinese heritage. In India, this may include a variety of dry chicken preparations."
+      },
+      {
+        name: "Manchurian",
+        description:
+          "Veg Manchurian is a tasty Indo Chinese dish of fried veggie balls in a spicy, sweet and tangy sauce. "
       }
     ],
     Italian: [
       {
-        name: "Pizza"
+        name: "Pizza",
+        description:
+          "Though a slab of flat bread served with oil and spices was around long before the unification Italy, there’s perhaps no dish that is as common or as representative of the country as the humble pizza."
       },
       {
-        name: "Pasta"
+        name: "Pasta",
+        description:
+          "pasta, any of several starchy food preparations (pasta alimentaria) frequently associated with Italian cuisine and made from semolina, the granular product obtained from the endosperm of a type of wheat called durum, and containing a large proportion of gluten (elastic protein)."
+      },
+      {
+        name: "Lasagna",
+        description:
+          "Lasagna is a wide, flat pasta noodle, usually baked in layers in the oven. Like most Italian dishes, its origins are hotly contested, but we can at least say that’s its stronghold is in the region of Emilia-Romagna, where it transformed from a poor man’s food to a rich meal filled with the ragù, or meat sauce."
       }
     ]
   };
@@ -45,14 +72,12 @@ export default function App() {
           <button onClick={() => setCategory(cat)}>{cat} </button>
         ))}
       </div>
-      <h2>List : </h2>
+      <h2>List</h2>
       <div class="list-container">
         {Food[category].map((foodie) => (
           <div class="list-item">
             <h2>{foodie.name}</h2>
-            {/* <a href={foodie.link} target="_blank" rel="noreferrer">
-              Picture
-            </a> */}
+            <h5>{foodie.description}</h5>
           </div>
         ))}
       </div>
