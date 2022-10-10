@@ -20,15 +20,23 @@ h1 {
   padding: 0.2rem;
   border: rgb(12, 7, 7) 2px;
   border-radius: 7px;
-  width: 90%;
   margin: 0.4rem;
 }
 .list-container {
   flex-direction: column;
   justify-content: space-evenly;
-  align-content: center;
   margin: 0.5rem;
 }
+
+.list-container h5 {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.list-container h2 {
+  color: seagreen;
+}
+
 button {
   padding: 0.4rem 2rem;
   width: max-content;
