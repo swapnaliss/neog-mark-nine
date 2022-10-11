@@ -36,7 +36,10 @@ h1 {
 .list-container h2 {
   color: seagreen;
 }
-
+.list-container .rating {
+  text-align: center;
+  margin-left: 60%;
+}
 button {
   padding: 0.4rem 2rem;
   width: max-content;
